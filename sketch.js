@@ -60,7 +60,7 @@ function draw() {
 
   drawSprites();
 
-  if(keyDown("space") && frameRate/30){
+  if(keyDown("space")){
     shootBullet();
   }
 
@@ -107,7 +107,7 @@ function shootBullet(){
   bullet = createSprite(150, width/2,50,20)
   bullet.y = player.y
   bullet.addImage(bulletImg)
-  bullet.velocityX = 60
+  bullet.velocityX = 120
   bulletGroup.add(bullet)
 
 }
